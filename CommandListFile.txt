@@ -1,0 +1,17 @@
+volume_up: cmd /c cd %s && nircmd.exe changesysvolume 2000
+volume_down: cmd /c cd %s && nircmd.exe changesysvolume -5000
+volume_max: cmd /c cd %s && nircmd.exe setsysvolume 65535
+volume_mute: cmd /c cd %s && nircmd.exe mutesysvolume 1
+volume_unmute: cmd /c cd %s && nircmd.exe mutesysvolume 0
+monitor_off: cmd /c cd %s && nircmd.exe monitor off
+monitor_on: cmd /c cd %s && nircmd.exe monitor on
+user_standby: cmd /c cd %s && nircmd.exe standby
+user_logout: cmd /c cd %s && nircmd.exe exitwin logoff
+computer_off: cmd /c cd %s && nircmd.exe exitwin poweroff
+center_windows: cmd /c cd %s && nircmd.exe win center alltop
+empty_bin: cmd /c cd %s && nircmd.exe emptybin
+print_screen: cmd /c cd %s && nircmd.exe cmdwait 2000 savescreenshot "C:\Users\ChinmayPC\screen_shot.png"
+open_calculator: cmd /s calc
+remove_programs: cmd /c control appwiz.cpl
+open_chrome: cmd /c start chrome
+close_chrome: cmd /c taskkill /IM chrome.exe
