@@ -18,7 +18,7 @@ $(BUILD_DIR)\jarvis.obj: jarvis.cpp
 
 .PHONY: clean
 clean:
-	del.exe $(BUILD_DIR)\*
+	del /q $(BUILD_DIR)\*
 
 rebuild:
 	nmake clean
